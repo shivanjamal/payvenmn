@@ -32,7 +32,7 @@
 پشتی ئەپ دابەزاند، کامێرا مۆبایلا خۆ ئاراستەی ڤی کۆدی بکە:
 
 <p align="center">
-  <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=exp://u.expo.dev/YOUR_PROJECT_ID" alt="QR Code" />
+  <img src="https://i.ibb.co/SXkyTbbs/Screenshot-5-1-2026-2254-expo-dev.jpg" alt="QR Code" />
 </p>
 
 ---
@@ -42,7 +42,7 @@
 * **Framework:** [React Native](https://reactnative.dev/)
 * **Platform:** [Expo](https://expo.dev/)
 * **UI Library:** React Native Paper / Tailwind CSS
-* **Auth:** Firebase / Supabase (یان هەر تشتەکێ تە بکارئینای)
+* **Auth:** Firebase / Supabase
 
 ---
 
@@ -50,20 +50,20 @@
 
 | شاشا سەرەکی | شاشا لۆگینێ | پڕۆفایل |
 | :---: | :---: | :---: |
-| <img src="https://via.placeholder.com/200x400" width="150" /> | <img src="[https://via.placeholder.com/200x400" width="150](https://i.ibb.co/JwZwvp18/photo-2026-01-05-02-44-06.jpg)" /> | <img src="https://via.placeholder.com/200x400" width="150" /> |
+| <img src="https://i.ibb.co/GQQz0YnK/photo-2026-01-05-02-44-07.jpg" /> | <img src="https://i.ibb.co/JwZwvp18/photo-2026-01-05-02-44-06.jpg" /> | <img src="https://i.ibb.co/QFCw2Y8d/photo-2026-01-05-02-44-07-2.jpg" /> |
 
-*(تێبینی: ل شوینا ڤان لینکان، وێنەیێن ئەپێ خۆ دانێ)*
+
 
 ---
 
 ## 👨‍💻 گەشەپێدەر (Developer)
 
-- **ناڤ:** [ناڤێ تە لێرە بنڤیسە]
-- **پەیجێ مە:** [لینکا وێبسایتێ مە یێ نوو]
-- **سۆشیاڵ میدیا:** [@YourHandle]
+- **ناڤ:** [shvan jamal ahmad]
+- **پەیجێ مە:** [https://payvenmn.netlify.app/]
+- **سۆشیاڵ میدیا:** [https://www.instagram.com/iamshvan.26]
 
 ---
 
 <p align="center">
-  دروستکرییە ب ❤️ ژ لایێ تیمێ <b>پەیڤێن من</b>
+  دروستکرییە ب ❤️ ژ لایێ تیما <b>پەیڤێن من</b>
 </p>
