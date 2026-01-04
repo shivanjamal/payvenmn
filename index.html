@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ku" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پەیڤێن من | ڕێنمایێن دابەزاندنێ</title>
+    
+    <link rel="icon" type="image/jpeg" href="https://i.ibb.co/dww6dcZM/icon.jpg">
+    <link rel="apple-touch-icon" href="https://i.ibb.co/dww6dcZM/icon.jpg">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    
+    <style>
+        :root {
+            --primary: #39FF14;
+            --bg: #030303;
+            --glass: rgba(255, 255, 255, 0.03);
+            --border: rgba(255, 255, 255, 0.08);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Vazirmatn', sans-serif; }
+
+        body {
+            background-color: var(--bg);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+        }
+
+        .bg-glow {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(circle at 50% -20%, #1a3311 0%, transparent 50%);
+            z-index: -1;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        /* ستایلێ لۆگۆیێ نوو */
+        .app-icon {
+            width: 100px;
+            height: 100px;
+            border-radius: 22px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(57, 255, 20, 0.2);
+            border: 1px solid var(--border);
+            animation: bounceIn 1s ease;
+        }
+
+        .logo { font-size: 3rem; font-weight: 900; margin-bottom: 5px; }
+        .logo span { color: var(--primary); }
+
+        .header-desc { color: #888; margin-bottom: 50px; font-size: 1.1rem; }
+
+        .guide-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .guide-card {
+            background: var(--glass);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border);
+            border-radius: 25px;
+            padding: 25px;
+            display: flex;
+            align-items: center;
+            text-align: right;
+            transition: 0.3s ease;
+        }
+
+        .guide-card:hover { 
+            border-color: var(--primary); 
+            transform: translateX(-5px);
+        }
+
+        .step-number {
+            width: 45px; height: 45px;
+            background: var(--primary);
+            color: #000;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.4rem;
+            font-weight: 900;
+            margin-left: 20px;
+            flex-shrink: 0;
+        }
+
+        .guide-content h3 { font-size: 1.2rem; margin-bottom: 5px; color: #fff; }
+        .guide-content p { color: #aaa; font-size: 0.95rem; line-height: 1.6; }
+
+        .qr-section {
+            background: var(--glass);
+            border: 1px solid var(--border);
+            border-radius: 35px;
+            padding: 40px;
+            margin-top: 20px;
+        }
+
+        .qr-box {
+            background: #fff;
+            padding: 15px;
+            border-radius: 25px;
+            display: inline-block;
+            margin-bottom: 25px;
+        }
+
+        .qr-box img { width: 220px; height: 220px; display: block; }
+
+        .badge-group {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+
+        .download-link {
+            flex: 1;
+            min-width: 200px;
+            background: #0a0a0a;
+            border: 1px solid #222;
+            padding: 16px 25px;
+            border-radius: 18px;
+            font-size: 0.95rem;
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            transition: 0.3s ease;
+        }
+
+        .download-link:hover {
+            border-color: var(--primary);
+            background: #111;
+        }
+
+        .download-link i { color: var(--primary); font-size: 1.3rem; }
+
+        @keyframes bounceIn {
+            0% { opacity: 0; transform: scale(0.3); }
+            50% { opacity: 1; transform: scale(1.05); }
+            70% { transform: scale(0.9); }
+            100% { transform: scale(1); }
+        }
+
+        footer { padding: 50px; color: #333; font-size: 0.8rem; }
+
+        @media (max-width: 600px) {
+            .guide-card { flex-direction: column; text-align: center; }
+            .step-number { margin-left: 0; margin-bottom: 15px; }
+            .badge-group { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-glow"></div>
+
+    <div class="container">
+        <img src="https://i.ibb.co/dww6dcZM/icon.jpg" alt="Logo" class="app-icon">
+        
+        <div class="logo">پەیڤێن من<span>.</span></div>
+        <p class="header-desc">ڕێنمایێن دابەزاندن و بکارئینانێ بۆ iOS و Android</p>
+
+        <div class="guide-grid">
+            <div class="guide-card">
+                <div class="step-number">١</div>
+                <div class="guide-content">
+                    <h3>دابەزاندنا Expo Go</h3>
+                    <p>ئەپێ <b>Expo Go</b> ژ ستۆرێ مۆبایلا خۆ دابەزینە (ل خوارێ لینک یێن هەین).</p>
+                </div>
+            </div>
+
+            <div class="guide-card">
+                <div class="step-number">٢</div>
+                <div class="guide-content">
+                    <h3>سکانکرنا کۆدی</h3>
+                    <p>ئەپێ Expo Go ڤەکە و فەرمانا <b>Scan QR Code</b> هەلبژێرە یان کامێرێ بکاربینە.</p>
+                </div>
+            </div>
+
+            <div class="guide-card">
+                <div class="step-number">٣</div>
+                <div class="guide-content">
+                    <h3>دەستپێبکە</h3>
+                    <p>پشتی ئەپ ڤەبوو، حسابەکێ دروست بکە و پەیڤێن خۆ پارێزە.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="qr-section">
+            <h2 style="margin-bottom: 25px; font-weight: 300;">سکان بکە دا ئەپ ڤەبیت</h2>
+            <div class="qr-box">
+                <img src="https://i.ibb.co/SXkyTbbs/Screenshot-5-1-2026-2254-expo-dev.jpg" alt="QR Code">
+            </div>
+            
+            <div class="badge-group">
+                <a href="https://apps.apple.com/app/expo-go/id982107779" target="_blank" class="download-link">
+                    <i class="fab fa-apple"></i>
+                    <span>دابەزاندن بۆ iOS</span>
+                </a>
+
+                <a href="https://play.google.com/store/apps/details?id=host.exp.exponent" target="_blank" class="download-link">
+                    <i class="fab fa-android"></i>
+                    <span>دابەزاندن بۆ Android</span>
+                </a>
+            </div>
+        </div>
+
+        <footer>
+            هەمی مافێن پڕۆژەی د پاراستی نە بۆ تیما پەیڤێن من &copy; 2026
+        </footer>
+    </div>
+
+</body>
+</html>
